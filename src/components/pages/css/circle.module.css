@@ -1,0 +1,45 @@
+.circle1 {
+    position: absolute;
+    height: 10%;
+    bottom: 0vh;
+    right: 0vw;
+}
+
+.circle2 {
+    position: absolute;
+    height: 40%;
+    top: 40vh;
+}
+
+.circle3 {
+    position: absolute;
+    height: 30%;
+    top: 0;
+    right: 0;
+}
+
+.circle4 {
+    position: absolute;
+    height: 20%;
+}
+
+.circle5 {
+    position: absolute;
+    height: 20%;
+    right: 30vw;
+    top: 25vh;
+}
+
+.circle6 {
+    position: absolute;
+    height: 30%;
+    right: -20vw;
+    bottom: 20vh;
+}
+
+.circle7 {
+    position: absolute;
+    height: 10%;
+    bottom: 10vh;
+    left: 35vw;
+}

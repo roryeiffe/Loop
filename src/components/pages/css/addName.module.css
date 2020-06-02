@@ -1,0 +1,22 @@
+.input {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    border-radius: 50px;
+    border: solid;
+    font-size: 20px;
+    padding: 0.3em 0;
+    cursor: pointer;
+    z-index: 1;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    font-family: "Montserrat";
+    text-align: center;
+    background: #ffd6f9;
+}
+
+.input:focus {
+    outline-width: 0;
+}
