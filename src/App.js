@@ -61,19 +61,19 @@ class App extends Component {
     // Whether or not enough players are in the game (3 or more)
     enough: true,
     // Defines which stage of the game the players are currently on
-    page: "questions",
+    page: "viewResults",
     // Which category is picked:
     category: "",
     // The complete bank of answers and the answers used in the current round, respectively:
     answer_bank: [],
-    answers: [],
+    answers: ["dfdsa", "Fvdssfa", "FDasfa", "Ddsf", "Ddsaa", "dvfds"],
     // The correct answer:
     answer: "",
     // Index value of which player is out of the loop:
     out_of_loop_index: -1,
     // Bank of questions and questions used in the current round, respectively:
     question_bank: [],
-    questions: ["fdkjfdkjgkjfdbvkfdjb fdkvjfvlkjvlkjffdlkjnfd", "vkjfdsbkjfdbvfdlkjbalkjbvalkjfdbvlkfajba", "jlkdsjvnbdslkjvlkjdbvlkajb"],
+    questions: [],
   };
 
   // Delete name that you don't want to use by filtering out the names that
@@ -106,7 +106,7 @@ class App extends Component {
       answer: "new answer",
     };
     // Push new player
-    if (!found && title !== "") nameList.push(newPlayer);
+    if (!found && title !== "" && this.state.players.length < 8) nameList.push(newPlayer);
     this.setState({ names: nameList });
     // If we have enough (3) players, allow game to start
     if (nameList.length >= 3) this.setState({ enough: true });

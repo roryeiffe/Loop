@@ -1,25 +1,24 @@
 import React, { Component } from "react";
 import propTypes from "prop-types";
+import Button from "./button";
+import styles from "./pages/css/voteItem.module.css";
 
 export default class VoteItem extends Component {
   state = {
-    selectValue: [
-      ...this.props.players.filter(
-        (player_) => player_.name !== this.props.player.name
-      ),
-    ][0].name,
+    selectValue: "",
     display: "block",
   };
   //Update category as we change select picker
   onChange = (e) => {
-    this.setState({ selectValue: e.target.value });
+    this.setState({ selectValue: e });
   };
 
   //Pase this value back to App.js upon submission
-  onSubmit = (e) => {
-    e.preventDefault();
-    this.props.updateVotes(this.props.player.name, this.state.selectValue);
-    this.setState({ display: "none" });
+  onSubmit = () => {
+    if(this.state.selectValue !== "") {
+      this.props.updateVotes(this.props.player.name, this.state.selectValue);
+      this.setState({ display: "none" });
+    }
   };
 
   render() {
@@ -27,31 +26,21 @@ export default class VoteItem extends Component {
       <React.Fragment>
         <div
           style={{
-            position: "absolute",
-            background: "white",
             display: this.state.display,
-            width: "500px",
           }}
+          className = {styles.wrapper}
         >
-          <h1>{this.props.player.name} vote:</h1>
-          <form id="player" onSubmit={this.onSubmit}>
-            <select
-              value={this.state.value}
-              name="selectpicker"
-              onChange={this.onChange}
-            >
-              {[
-                ...this.props.players.filter(
-                  (player_) => player_.name !== this.props.player.name
-                ),
-              ].map((player) => (
-                <option name={player.name} value={player.name}>
-                  {player.name}
-                </option>
-              ))}
-            </select>
-            <button>Submit</button>
-          </form>
+          <h1 className = {styles.header}>{this.props.player.name} votes for {this.state.selectValue}</h1>
+          <div>
+            {[
+              ...this.props.players.filter(
+                (player_) => player_.name !== this.props.player.name
+              ),
+            ].map((player) => (
+              <Button className = {styles.choice} onClick={this.onChange.bind(this,player.name)}>{player.name}</Button>
+            ))}
+            <Button className = {styles.submit} onClick={this.onSubmit}>Submit</Button>
+          </div>
         </div>
       </React.Fragment>
     );

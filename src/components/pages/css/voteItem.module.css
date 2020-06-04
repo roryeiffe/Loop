@@ -1,0 +1,26 @@
+.wrapper {
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    background: white;
+    position: absolute;
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.choice{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.submit {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+}

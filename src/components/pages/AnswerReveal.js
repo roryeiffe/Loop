@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import styles from "./css/playerReveal.module.css";
+import Button from "../button";
+import Header from "../header";
 
 export default class AnswerReveal extends Component {
     finish = () => {
@@ -8,8 +11,11 @@ export default class AnswerReveal extends Component {
     render() {
         return (
             <div>
-                <h1>{this.props.player.name} voted for {this.props.player.vote} but the real answer is {this.props.answer}</h1>
-                <button onClick = {this.finish}>See scores:</button>
+                <Header><h1>Answer Reveal</h1></Header>
+                <h1 className = {styles.header1}>{this.props.player.name} voted for {this.props.player.vote}</h1>
+                <h1 className = {styles.header2}> But the real answer is </h1>
+                <h1 className = {styles.answer}>{this.props.answer}</h1>
+                <Button className = {styles.submit} onClick = {this.finish}>See scores:</Button>
             </div>
         )
     }

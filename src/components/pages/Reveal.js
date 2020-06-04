@@ -3,6 +3,7 @@ import RevealItem from "../RevealItem";
 import propTypes from "prop-types";
 import styles from "./css/reveal.module.css";
 import Button from "../button";
+import Header from "../header";
 
 export default class Reveal extends Component {
   finish = () => {
@@ -11,6 +12,7 @@ export default class Reveal extends Component {
   render() {
     return (
       <div>
+        <Header><h1>Answer Reveal</h1></Header>
         {this.props.players.map((player) => (
           <RevealItem
             name={player.name}

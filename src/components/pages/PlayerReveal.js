@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import styles from "./css/playerReveal.module.css";
+import Button from "../button";
+import Header from "../header";
 
 export default class PlayerReveal extends Component {
   state = {
@@ -70,11 +73,12 @@ export default class PlayerReveal extends Component {
     return (
       <div>
       <div>
-        <h1>The majority of players voted for: {this.state.guess}</h1>
-        <h1>But who was actually out of the loop?</h1>
-        <h1>{this.state.actual}</h1>
+        <Header><h1>Player Reveal</h1></Header>
+        <h1 className = {styles.header1}>The majority of players voted for: {this.state.guess}</h1>
+        <h1 className = {styles.header2}>But who was actually out of the loop?</h1>
+        <h1 className = {styles.answer}>{this.state.actual}</h1>
         
-        <button onClick = {this.finish}>Vote for the answer</button>
+        <Button className = {styles.submit} onClick = {this.finish}>Vote for the answer</Button>
       </div>
       </div>
     );

@@ -1,0 +1,44 @@
+.header1, .header2{
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    border: solid;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    animation-name: slideFade;
+    animation-duration: 1s;
+    font-family: "Montserrat";
+}
+
+.answer{
+    background: white;
+    border: solid;
+    border-radius: 20px;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+    animation-name: slideFade;
+    animation-duration: 10s;
+    font-family: "Montserrat";
+}
+.submit {
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+@keyframes slideFade{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

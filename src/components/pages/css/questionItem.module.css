@@ -1,0 +1,25 @@
+.wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 400px;
+    background: #E4D9FF;
+    width: 80%;
+    margin: auto;
+    padding: 12px;
+    font-size: 12px;
+    font-family: "Montserrat";
+    border: solid;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.button {
+    font-size: 24px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+}

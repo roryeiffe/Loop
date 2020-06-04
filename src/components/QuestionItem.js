@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Button from "./button";
+import styles from "./pages/css/questionItem.module.css";
 
 export default class QuestionItem extends Component {
   state = {
@@ -19,18 +21,14 @@ export default class QuestionItem extends Component {
       <div>
         <div
           style={{
-            zIndex: this.props.points,
-            position: "absolute",
             display: this.state.display,
           }}
+          className={styles.wrapper}
         >
-          <h2 style = {{color: "white",width: "800px", height: "300px", background: "blue",}}>{this.props.question}</h2>
-          <button
-            style={{ cursor: "pointer", width: "200px", height: "100px" }}
-            onClick={this.hide}
-          >
+          <h2>{this.props.question}</h2>
+          <Button className={styles.button} onClick={this.hide}>
             Next Question
-          </button>
+          </Button>
         </div>
       </div>
     );

@@ -24,7 +24,7 @@ export default class RevealItem extends Component {
         style={{ zIndex: this.props.id, display: this.state.display }}
       >
         <h1>{this.props.name}</h1>
-        {this.state.showAnswer && <h2>Answer: {this.props.answer}</h2>}
+        {this.state.showAnswer && <h2>{this.props.answer}</h2>}
         <Button className = {styles.button} onClick={this.showAnswer}>View answer</Button>
         <Button className = {styles.button} onClick={this.hide}>Next Person</Button>
       </div>

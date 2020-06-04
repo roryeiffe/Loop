@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import VoteItem from "../VoteItem";
+import Header from "../header";
+import styles from "./css/playerVote.module.css";
+import Button from "../button";
 
 export default class Vote extends Component {
     //Takes in player and vote and updates the vote atttribute of the player
@@ -20,6 +23,7 @@ export default class Vote extends Component {
     //for who they think is out of the loop:
     return (
       <div>
+        <Header><h1>Vote for who is out of the loop</h1></Header>
         {this.props.players.map((player) => (
           <VoteItem
             key={player.name}
@@ -28,7 +32,7 @@ export default class Vote extends Component {
             updateVotes={this.updateVotes}
           />
         ))}
-        <button onClick = {this.finish}>Click Me Now</button>
+        <Button className = {styles.button} onClick = {this.finish}>Click Me Now</Button>
       </div>
     );
   }
