@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from "./pages/css/addName.module.css";
+import Button from "./button";
 
 export default class AddName extends Component {
     state = {
@@ -26,11 +27,14 @@ export default class AddName extends Component {
                     onChange = {this.onChange}
                     className = {styles.input}
                 />
-                <input
+                <Button
                     type = "submit"
                     value = "Submit"
+                    onClick = {this.onSubmit}
                     className = {styles.submit}
-                />
+                >
+                Submit
+                </Button>
             </form>
         )
     }

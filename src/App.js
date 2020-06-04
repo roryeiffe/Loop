@@ -11,6 +11,9 @@ import AnswerVote from "./components/pages/AnswerVote";
 import AnswerReveal from "./components/pages/AnswerReveal";
 import ViewResults from "./components/pages/ViewResults";
 import Circles from "./components/Circles";
+import Button from "./components/button";
+import Header from "./components/header";
+import { v4 as uuidv4 } from 'uuid';
 
 import styles from "./components/pages/css/app.module.css";
 
@@ -58,7 +61,7 @@ class App extends Component {
     // Whether or not enough players are in the game (3 or more)
     enough: true,
     // Defines which stage of the game the players are currently on
-    page: "start",
+    page: "questions",
     // Which category is picked:
     category: "",
     // The complete bank of answers and the answers used in the current round, respectively:
@@ -70,7 +73,7 @@ class App extends Component {
     out_of_loop_index: -1,
     // Bank of questions and questions used in the current round, respectively:
     question_bank: [],
-    questions: [],
+    questions: ["fdkjfdkjgkjfdbvkfdjb fdkvjfvlkjvlkjffdlkjnfd", "vkjfdsbkjfdbvfdlkjbalkjbvalkjfdbvlkfajba", "jlkdsjvnbdslkjvlkjdbvlkajb"],
   };
 
   // Delete name that you don't want to use by filtering out the names that
@@ -212,6 +215,7 @@ class App extends Component {
       // All players start with 0 points:
       playersTemp[i].currentPoints = 0;
       playersTemp[i].count = 0;
+      playersTemp[i].id = uuidv4();
     }
     // Update the state:
     this.setState({ players: playersTemp });
@@ -382,6 +386,10 @@ class App extends Component {
                 <Circles className = {styles.circles}></Circles>
                 {this.state.page === "start" && (
                   <div className={styles.above}>
+                    <Header className = {styles.header}>
+                      <h1>Enter Player Names:</h1>
+                      <h3>(Tap to Delete)</h3>
+                    </Header>
                     <Names
                       players={this.state.players}
                       delName={this.delName}
@@ -390,9 +398,9 @@ class App extends Component {
                   </div>
                 )}
                 {this.state.enough && this.state.page === "start" && (
-                  <button onClick={this.changePage.bind(this, "cat")}>
+                  <Button className = {styles.play} onClick={this.changePage.bind(this, "cat")}>
                     Play
-                  </button>
+                  </Button>
                 )}
 
                 {this.state.page === "cat" && (

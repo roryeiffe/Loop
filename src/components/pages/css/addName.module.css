@@ -14,9 +14,16 @@
     animation-duration: 0.5s;
     font-family: "Montserrat";
     text-align: center;
-    background: #ffd6f9;
 }
 
 .input:focus {
     outline-width: 0;
+}
+
+.submit {
+    padding: 5px 0;
+    text-transform: uppercase;
+    width: 40%;
+    border-radius: 20px;
+    font-size: 20px;
 }

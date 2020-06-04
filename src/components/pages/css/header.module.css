@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    background: white;
+    font-family: "Montserrat";
+    animation-name: slide;
+    animation-duration: 0.3s;
+    text-transform: capitalize;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

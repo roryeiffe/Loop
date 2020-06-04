@@ -1,0 +1,23 @@
+.wrapper {
+    background: white;
+    color: black;
+    border: solid;
+    font-family: "Montserrat";
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+
+.wrapper:focus {
+    outline-width: 0;
+}
+
+.wrapper:active {
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.wrapper p {
+    margin: 0;
+}

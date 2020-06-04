@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import RevealItem from "../RevealItem";
 import propTypes from "prop-types";
+import styles from "./css/reveal.module.css";
+import Button from "../button";
 
 export default class Reveal extends Component {
   finish = () => {
@@ -11,13 +13,13 @@ export default class Reveal extends Component {
       <div>
         {this.props.players.map((player) => (
           <RevealItem
-            key={player.name}
             name={player.name}
             answer={player.answer}
             points={player.points}
+            key={player.id}
           />
         ))}
-        <button onClick={this.finish}>Click me</button>
+        <Button className = {styles.button} onClick={this.finish}>Ask Questions</Button>
       </div>
     );
   }
