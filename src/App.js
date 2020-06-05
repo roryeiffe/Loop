@@ -384,6 +384,8 @@ class App extends Component {
             path="/"
             render={(props) => (
               <div className={styles.page}>
+                <div className = {styles.leftBlock}></div>
+                <div className = {styles.rightBlock}></div>
                 <Circles className = {styles.circles}></Circles>
                 {this.state.page === "start" && (
                   <div className={styles.above}>

@@ -2,13 +2,13 @@
     top: 20%;
     left: 0;
     right: 0;
-    bottom: 10%;
     background: white;
     border-radius: 15px;
     border: solid;
     position: absolute;
     width: 80%;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .header {
@@ -26,4 +26,5 @@
     width: 40%;
     padding: 10px;
     border-radius: 20px;
+    margin-bottom: 15px;
 }
