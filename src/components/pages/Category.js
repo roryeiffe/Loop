@@ -21,7 +21,7 @@ export default class Category extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header><h1 className = {styles.header}>{this.state.selectValue}</h1></Header>
+        <Header><p className = {styles.header}>{this.state.selectValue}</p></Header>
         <div className = {styles.form}>
           <Button className = {styles.catItem} onClick={this.onChange.bind(this,"food")}>Food</Button>
           <Button className = {styles.catItem} onClick={this.onChange.bind(this,"players")}>Players</Button>

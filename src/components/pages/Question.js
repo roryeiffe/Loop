@@ -12,11 +12,11 @@ export default class Question extends Component {
   render() {
     return (
       <div>
-        <Header><h1>Question Time</h1></Header>
+        <Header><p className = {styles.header}>Question Time</p></Header>
         {this.props.questions.map((question) => (
           <QuestionItem question={question} />
         ))}
-        <Button className = {styles.button} onClick={this.finish}>Click me</Button>
+        <Button className = {styles.button} onClick={this.finish}>Time to Vote!</Button>
       </div>
     );
   }

@@ -12,7 +12,7 @@ export default class Reveal extends Component {
   render() {
     return (
       <div>
-        <Header><h1>Answer Reveal</h1></Header>
+        <Header><p className = {styles.header}>Answer Reveal</p></Header>
         {this.props.players.map((player) => (
           <RevealItem
             name={player.name}

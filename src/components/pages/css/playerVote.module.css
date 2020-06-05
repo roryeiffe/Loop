@@ -1,11 +1,18 @@
+.header {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .button {
     position: absolute;
     top: 49%;
     left: 0;
     right: 0;
     height: auto;
-    width: 200px;
+    width: 60%;
     padding: 10px;
     z-index: -1;
+    border-radius: 20px;
 
 }

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background: #3772e0;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+:root {
+  --main-bg-color: #ffffff;
+  --main-outline-color: #23BE7B;
+}

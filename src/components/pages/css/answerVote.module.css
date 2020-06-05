@@ -1,13 +1,21 @@
+.header {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .wrapper {
-    top: 0;
+    top: 10%;
     left: 0;
     right: 0;
-    bottom: 0;
     background: white;
+    border: solid;
+    border-radius: 15px;
     position: absolute;
     width: 80%;
-    height: 700px;
+    height: auto;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .header {
@@ -15,13 +23,15 @@
 }
 
 .choice{
-    width: 50%;
+    width: 60%;
     margin-bottom: 20px;
     padding: 10px;
+    font-size: 14px;
 }
 
 .submit {
     width: 40%;
     padding: 10px;
     border-radius: 20px;
+    margin-bottom: 15px;
 }

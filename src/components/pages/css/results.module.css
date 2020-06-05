@@ -1,5 +1,15 @@
+.header {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .wrapper {
     background: white;
+    border: solid;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
     padding: 10px;
     font-size: 15px;
 }

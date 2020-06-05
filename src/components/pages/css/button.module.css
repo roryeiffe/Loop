@@ -1,11 +1,14 @@
 .wrapper {
-    background: white;
-    color: black;
+    background: var(--main-outline-color);
+    color:white;
     border: solid;
+    border-color: black;
     font-family: "Montserrat";
     cursor: pointer;
     text-align: center;
     margin: auto;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .wrapper:focus {
@@ -13,9 +16,9 @@
 }
 
 .wrapper:active {
-    background: black;
+    background: var(--main-outline-color);
+    border-color: var(--main-outline-color);
     color: white;
-    border-color: black;
 }
 
 .wrapper p {

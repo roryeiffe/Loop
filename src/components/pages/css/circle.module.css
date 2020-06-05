@@ -1,45 +1,146 @@
+.circles {
+    position: relative;
+}
+
 .circle1 {
     position: absolute;
-    height: 10%;
-    bottom: 0vh;
-    right: 0vw;
+    opacity: 0.1;
+    left: 0;
+    top: 25%;
+    height: 50%;
 }
 
-.circle2 {
+.circle2{
     position: absolute;
-    height: 40%;
-    top: 40vh;
-}
-
-.circle3 {
-    position: absolute;
+    opacity: 0.3;
+    top: -15%;
+    left: -20%;
     height: 30%;
-    top: 0;
-    right: 0;
 }
 
-.circle4 {
+.circle3{
     position: absolute;
-    height: 20%;
+    opacity: 0.1;
+    top: -15%;
+    right: -30%;
+    height: 30%;
 }
 
-.circle5 {
+.circle4{
     position: absolute;
+    opacity: 0.2;
     height: 20%;
-    right: 30vw;
-    top: 25vh;
+    bottom: 5%;
+    left: -20%;
+}
+
+.circle5{
+    position: absolute;
+    opacity: 0.1;
+    height: 40%;
+    bottom: 00%;
+    right: -50%;
 }
 
 .circle6 {
     position: absolute;
-    height: 30%;
-    right: -20vw;
-    bottom: 20vh;
+    left: -100%;
+    top: -50%;
+    opacity: 0.4;
 }
 
-.circle7 {
+.circle7{
     position: absolute;
+    right: 60%;
+    bottom: 140%;
+    opacity: 0.1;
+    height: 60%;
+}
+
+.circle8{
+    position: absolute;
+    opacity: 0.4;
+    right: 150%;
+    bottom: 180%;
+    height: 20%;
+}
+
+.circle9{
+    position: absolute;
+    opacity: 0.1;
+    right: 110%;
+    bottom: 180%;
     height: 10%;
-    bottom: 10vh;
-    left: 35vw;
+}
+
+.circle10{
+    position: absolute;
+    opacity: 0.1;
+    right: 170%;
+    bottom: 150%;
+    height: 30%;
+}
+
+.circle11{
+    position: absolute;
+    opacity: 0.3;
+    height: 30%;
+    bottom: -20%;
+    left: 20%;
+}
+
+.circle12{
+    position: absolute;
+    opacity: 0.05;
+    left: -90%;
+    top: 00%;
+    height: 50%;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle11 {
+    animation: glide1 60s linear infinite;
+}
+
+.circle6, .circle7, .circle8, .circle9, .circle10, .circle12{
+    animation: glide2 60s linear infinite;
+}
+
+@keyframes glide1{
+    0%{
+        transform: translate(0,0);
+        visibility: visible;
+    }
+    49%{
+        visibility: visible;
+    }
+    50%{
+        transform: translate(100vw,100vh);
+        visibility: hidden;
+    }
+    51%{
+        transform: translate(-100vw,-100vh);
+        visibility: hidden;
+    }
+    100%{
+        transform: translate(0,0);
+        visibility: visible;
+    }
+}
+
+@keyframes glide2{
+    0%{
+        transform: translate(0,0);
+        visibility: visible;
+    }
+    50%{
+        transform: translate(100vw,100vh);
+    }
+    99%{  
+        transform: translate(200vw,200vh);
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+        transform: translate(0,0);
+    }
 }

@@ -12,7 +12,7 @@ export default class ViewResults extends Component {
     return (
       <div>
         <Header>
-          <h1>Results:</h1>
+          <p className = {styles.header}>Results:</p>
         </Header>
         <div className={styles.wrapper}>
           {this.props.players.map((player) => (

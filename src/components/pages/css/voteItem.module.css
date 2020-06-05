@@ -4,6 +4,8 @@
     right: 0;
     bottom: 10%;
     background: white;
+    border-radius: 15px;
+    border: solid;
     position: absolute;
     width: 80%;
     margin: auto;
@@ -17,6 +19,7 @@
     width: 50%;
     margin-bottom: 20px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .submit {

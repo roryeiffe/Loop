@@ -61,12 +61,12 @@ class App extends Component {
     // Whether or not enough players are in the game (3 or more)
     enough: true,
     // Defines which stage of the game the players are currently on
-    page: "viewResults",
+    page: "start",
     // Which category is picked:
     category: "",
     // The complete bank of answers and the answers used in the current round, respectively:
     answer_bank: [],
-    answers: ["dfdsa", "Fvdssfa", "FDasfa", "Ddsf", "Ddsaa", "dvfds"],
+    answers: [],
     // The correct answer:
     answer: "",
     // Index value of which player is out of the loop:
@@ -114,6 +114,7 @@ class App extends Component {
 
   // Whenever we want to display a new page, we change the page state:
   changePage = (newPage) => {
+    window.scrollTo(0,0); 
     this.setState({ page: newPage });
   };
 
@@ -387,8 +388,8 @@ class App extends Component {
                 {this.state.page === "start" && (
                   <div className={styles.above}>
                     <Header className = {styles.header}>
-                      <h1>Enter Player Names:</h1>
-                      <h3>(Tap to Delete)</h3>
+                      <p className = {styles.header1}>Enter Player Names:</p>
+                      <p className = {styles.header2}>(Tap to Delete)</p>
                     </Header>
                     <Names
                       players={this.state.players}

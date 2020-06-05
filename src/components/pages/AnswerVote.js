@@ -26,7 +26,7 @@ export default class AnswerVote extends Component {
       <div>
         <h1>
           <Header>
-            <h3>Answer Vote</h3>
+            <p className = {styles.header}>Answer Vote</p>
           </Header>
         </h1>
         <div className={styles.wrapper}>

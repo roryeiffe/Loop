@@ -11,7 +11,7 @@ export default class AnswerReveal extends Component {
     render() {
         return (
             <div>
-                <Header><h1>Answer Reveal</h1></Header>
+                <Header><p className = {styles.header}>Answer Reveal</p></Header>
                 <h1 className = {styles.header1}>{this.props.player.name} voted for {this.props.player.vote}</h1>
                 <h1 className = {styles.header2}> But the real answer is </h1>
                 <h1 className = {styles.answer}>{this.props.answer}</h1>

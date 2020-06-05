@@ -5,6 +5,8 @@
     animation-name: slide;
     animation-duration: 0.3s;
     text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @keyframes slide {

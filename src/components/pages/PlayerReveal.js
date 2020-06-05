@@ -73,7 +73,7 @@ export default class PlayerReveal extends Component {
     return (
       <div>
       <div>
-        <Header><h1>Player Reveal</h1></Header>
+        <Header><p className = {styles.header}>Player Reveal</p></Header>
         <h1 className = {styles.header1}>The majority of players voted for: {this.state.guess}</h1>
         <h1 className = {styles.header2}>But who was actually out of the loop?</h1>
         <h1 className = {styles.answer}>{this.state.actual}</h1>

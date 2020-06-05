@@ -1,5 +1,7 @@
 .header {
-    padding: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .form {
@@ -9,11 +11,10 @@
 
 .catItem {
     cursor: pointer;
-    background: white;
-    padding: 1em;
+    padding: 0.3em;
     width: 40vw;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -22,5 +23,6 @@
     padding: 0.3em;
     font-size: 1.5em;
     border-radius: 20px;
+    margin-bottom: 15px;
 }
 

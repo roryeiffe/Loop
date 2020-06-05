@@ -23,7 +23,7 @@ export default class Vote extends Component {
     //for who they think is out of the loop:
     return (
       <div>
-        <Header><h1>Vote for who is out of the loop</h1></Header>
+        <Header><p className = {styles.header}>Vote for who is out of the loop</p></Header>
         {this.props.players.map((player) => (
           <VoteItem
             key={player.name}
