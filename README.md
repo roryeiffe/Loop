@@ -4,7 +4,7 @@ This repository is a recreation of the phone game "Out of the Loop" by the compa
 
 No original code or questions from the original game were used for this recreation.
 
-https://play.google.com/store/apps/details?id=com.tastyrook.loop&hl=en_US&gl=US
+Original game: https://play.google.com/store/apps/details?id=com.tastyrook.loop&hl=en_US&gl=US
 
 To play the game, all players enter their names and hit the "play" button. There must be 3 or more players registered to start the game. Next, the player selects a category from which an answer and questions will be selected. 
 
