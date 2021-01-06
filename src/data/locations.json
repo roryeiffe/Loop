@@ -1,106 +1,70 @@
 [{
-	"title:" : "Schenectady High"
+	"title" : "Dunder Mifflin"
 },
 {
-	"title:" : "Will's Basement"
+	"title" : "Corner Store"
 },
 {
-	"title:" : "Jack's Backyard"
+	"title" : "Tennis Court"
 },
 {
-	"title:" : "Roquie's Dog House"
+	"title" : "McDonalds"
 },
 {
-	"title:" : "Mr. Patterson's Jeep"
+	"title" : "New York City"
 },
 {
-	"title:" : "Fouad's Dentist Office"
+	"title" : "Atlantis"
 },
 {
-	"title:" : "Kevin's Living Room"
+	"title" : "Chicken Coop"
 },
 {
-	"title:" : "Dunder Mifflin"
+	"title" : "Farmhouse"
 },
 {
-	"title:" : "Chien's Back Room"
+	"title" : "Bikini Bottom"
 },
 {
-	"title:" : "Rainbow Road"
+	"title" : "Town Hall"
 },
 {
-	"title:" : "Baby Park"
+	"title" : "Prison"
 },
 {
-	"title:" : "Corner Store"
+	"title" : "Pirate ship"
 },
 {
-	"title:" : "Tennis Court"
+	"title" : "Kindergarten Classroom"
 },
 {
-	"title:" : "McDonalds"
+	"title" : "Prom Bus"
 },
 {
-	"title:" : "Abandoned Little Caesers or however you spell it"
+	"title" : "Gym"
 },
 {
-	"title:" : "G.E. Private Property"
+	"title" : "Butcher's Shop"
 },
 {
-	"title:" : "The Upside Down"
+	"title" : "Sausage Stand"
 },
 {
-	"title:" : "Pen Island"
+	"title" : "Museum"
 },
 {
-	"title:" : "New York City"
+	"title" : "Library"
 },
 {
-	"title:" : "Atlantis"
+	"title" : "Deserted Island"
 },
 {
-	"title:" : "Chicken Coop"
+	"title" : "Barber Shop"
 },
 {
-	"title:" : "Farmhouse"
+	"title" : "Football Stadium"
 },
 {
-	"title:" : "Bikini Bottom"
-},
-{
-	"title:" : "Town Hall"
-},
-{
-	"title:" : "Prison"
-},
-{
-	"title:" : "Forester's house"
-},
-{
-	"title:" : "Pirate ship"
-},
-{
-	"title:" : "Brothel"
-},
-{
-	"title:" : "Kindergarten Classroom"
-},
-{
-	"title:" : "Prom Bus"
-},
-{
-	"title:" : "Gym"
-},
-{
-	"title:" : "Butcher's Shop"
-},
-{
-	"title:" : "Sausage Stand"
-},
-{
-	"title:" : "Guyana"
-},
-{
-	"title:" : "Museum"
+	"title" : "Candy Store"
 }
 ]

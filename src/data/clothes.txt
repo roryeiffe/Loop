@@ -1,0 +1,21 @@
+shirt
+sweater
+socks
+shoes
+slippers
+underwear
+bra
+cardigan
+Halloween costume
+gloves
+mittens
+scarf
+fedora
+top hat
+baseball cap
+propellor hat
+tie
+suit
+tuxedo
+wedding dress
+shoelace

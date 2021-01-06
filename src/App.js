@@ -25,6 +25,10 @@ import animalQuestionsData from "./data/animals_questions.json";
 import locationsData from "./data/locations.json";
 import locationsQuestionsData from "./data/locations_questions.json";
 import playersQuestionsData from "./data/players_questions.json";
+import itemsData from "./data/items.json";
+import itemsQuestionsData from "./data/items_questions.json";
+import clothesData from "./data/clothes.json";
+import clothesQuestionsData from "./data/clothes_questions.json";
 
 class App extends Component {
   state = {
@@ -144,7 +148,13 @@ class App extends Component {
     } else if (cat === "locations") {
       answers = locationsData;
       questions = locationsQuestionsData;
-    } else if (cat === "players") {
+    } else if (cat === "items") {
+      answers = itemsData;
+      questions = itemsQuestionsData;
+    }else if (cat === "clothes") {
+      answers = clothesData;
+      questions = clothesQuestionsData;
+    }else if (cat === "players") {
       answers = this.state.players.map((item) => {
         return item.name;
       });

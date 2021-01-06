@@ -1,4 +1,28 @@
 [{
-	"title" : ""
+	"title" : "Would this make a good seat?"
+},
+{
+	"title" : "Can you hold this in your hands?"
+},
+{
+	"title" : "Name a color that this item comes in?"
+},
+{
+	"title" : "What is a price that you would be surprised to hear someone paid for this item?"
+},
+{
+	"title" : "Would you be surprised to hear of a house that didn't have this?"
+},
+{
+	"title" : "How easy is it to break this item?"
+},
+{
+	"title" : "How often do you lose this item?"
+},
+{
+	"title" : "How willing are you to lend this item?"
+},
+{
+	"title" : "Would you pay for an edible version of this item?"
 }
 ]

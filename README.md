@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This repository is a recreation of the phone game "Out of the Loop" by the company Tasty Rook. The recreation was done in order to fulfill my self-designed project requirement at Rensselaer Polytechnic Institute. 
 
-In the project directory, you can run:
+No original code or questions from the original game were used for this recreation.
 
-### `yarn start`
+https://play.google.com/store/apps/details?id=com.tastyrook.loop&hl=en_US&gl=US
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To play the game, all players enter their names and hit the "play" button. There must be 3 or more players registered to start the game. Next, the player selects a category from which an answer and questions will be selected. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Players pass the device around and click "view answer" to look at the secret word. Exactly one player will not see the answer (They will only see "you are out of the loop"). Once all (but one) players have seen the secret word, the app generates questions for the players to ask each other. During the phase, the player who is out of the loop will need to figure out what the secret word is, without giving away they don't know what it is. Players in the know need to figure out who the out player is, as well as convinve everyone that they know what the word is. Finally, all players vote who they think is out of the loop and the out player votes for what they think is the correct answer. 
 
-### `yarn test`
+Scores are assigned to the players based on how successfully they discovered the secret word or the out player. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to run
 
-### `yarn build`
+To run this, you must have node and npm installed on the device. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To install packages used for this project, type 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+`npm install` 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the project, run 
 
-### `yarn eject`
+`npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The app can be viewed by typing "localhost:3000" into the address bar of a browser. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## File structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Under src, the file App.js is the main file. From here, all components of the application are rendered and data is manipulated by functions. All data is stored in the state of App.js. Data is passed into components through props. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Under components, there is a pages folder that stores all the pages that are visited over the course of the game as well as css modules that are used to style the pages. 
 
-## Learn More
+There are also components that are instantiated throughout these pages (ex: AddName.js contains the input field that allows players to enter their names).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The data folder stores json files of the answers/questions that are used for the application. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The file "convert.py" converts a text file of questions or answers to a json file. 

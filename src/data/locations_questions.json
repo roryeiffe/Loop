@@ -1,7 +1,28 @@
 [{
-	"title:" : "Would this be a good location for a date?"
+	"title" : "Would this be a good location for a first date?"
 },
 {
-	"title:" : ""
+	"title" : "Would this be a good place to have a study session?"
+},
+{
+	"title" : "Is this a good place to have a meal?"
+},
+{
+	"title" : "Could a wedding be hosted here?"
+},
+{
+	"title" : "Could a birthday party be hosted here?"
+},
+{
+	"title" : "Is this place family friendly?"
+},
+{
+	"title" : "Is this place educational?"
+},
+{
+	"title" : "Would this be a good location for a school field trip?"
+},
+{
+	"title" : "How much would you need to be paid to live here for a year?"
 }
 ]

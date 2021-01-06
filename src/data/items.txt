@@ -1,0 +1,16 @@
+laptop
+book
+phone
+keys
+toaster
+pencil
+paper
+remote
+pillow
+table
+lamp
+soap
+rug
+couch
+printer
+T.V.
